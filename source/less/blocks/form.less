@@ -1,0 +1,150 @@
+.form {
+  @media (min-width: @desktop-width) {
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+    background-color: @main-white;
+    align-items: center;
+  }
+}
+
+.form__wrapper {
+  @media (min-width: @mobile-width) {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 320px;
+    margin-top: 50px;
+  }
+}
+
+.form-tel-wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 28px;
+
+  @media (min-width: @desktop-width) {
+    margin-bottom: 36px;
+  }
+}
+
+.form__title {
+  text-align: center;
+
+  @media (min-width: @mobile-width) {
+    font-size: 30px;
+    margin-top: 37px;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 39px;
+    margin: 0;
+    padding: 29px 26px;
+    background-color: @form-title-white-background;
+    color: #212121;
+    border-radius: 30px;
+  }
+}
+
+.form__title span {
+  @media (min-width: @mobile-width) {
+    display: block;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: inline;
+  }
+}
+
+.form__label {
+  font-weight: 800;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.form__label span {
+  color: @button-green;
+  margin-left: 5px;
+}
+
+.form-input {
+  background: #f8f8f8;
+  border: 1px solid #e4e4e4;
+  border-radius: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(33, 33, 33, 0.2);
+  padding: 16px 20px;
+  margin-top: 10px;
+}
+
+.form-input--name {
+  margin-bottom: 20px;
+
+  @media (min-width: @mobile-width) {
+    width: 240px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 278px;
+  }
+}
+
+.form-input--tel {
+
+  @media (min-width: @mobile-width) {
+    width: 134px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 144px;
+  }
+}
+
+.form__button {
+  background-color: @button-green;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: @main-white;
+  border: none;
+  padding: 12px 10px;
+  position: relative;
+
+  @media (min-width: @mobile-width) {
+    width: 280px;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 314px;
+    padding-right: 40px;
+  }
+
+  &::after {
+    content: "";
+    width: 20px;
+    height: 15px;
+    background: url("../../img/arrow-icon.svg") no-repeat;
+    position: absolute;
+
+    @media (min-width: @mobile-width) {
+      top: 15px;
+      right: 29%;
+    }
+
+    @media (min-width: @desktop-width) {
+      top: 14px;
+      right: 35%;
+    }
+  }
+}

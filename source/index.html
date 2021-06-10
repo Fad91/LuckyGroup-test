@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="favicon-lucky.ico" type="image/x-icon">
+  <title>LuckyGroup</title>
+</head>
+
+<body class="page-body">
+  <main>
+    <div class="main-wrapper">
+      <picture>
+        <source media="(min-width: 1280px)" srcset="./img/reduslim-image.png" width="560" height="500">
+        <img src="./img/reduslim-mobile-image.png" alt="reduslim">
+      </picture>
+      <form action="" class="form">
+        <h1 class="form__title">Сделай шаг к&nbsp;<span>выздоровлению</span></h1>
+        <div class="form__wrapper">
+          <label for="name" class="form__label">Ваше<span>имя</span></label>
+          <input type="text" name="name" id="name" placeholder="Алексей" class="form-input form-input--name">
+          <div class="form-tel-wrapper">
+            <label for="tel" class="form__label">Ваш<span>телефон</span>
+              <input type="tel" name="tel" id="tel" placeholder="+7 (123) 456 78-90" class="form-input form-input--tel">
+            </label>
+            <div class="custom-select-wrapper">
+              <div class="custom-select">
+                <div class="custom-select__trigger">
+                  <p>RU
+                    <img src="./img/ru-icon.svg" alt="">
+                  </p>
+                  <div class="arrow">
+                    <svg width="12" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1.182 1l4 4 4-4" stroke="#212121" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" /></svg>
+                  </div>
+                </div>
+                <div class="custom-options">
+                  <p class="custom-option selected" data-value="RU">RU
+                    <img src="./img/ru-icon.svg" alt="">
+                  </p>
+                  <p class="custom-option" data-value="EN">EN
+                    <img src="./img/ru-icon.svg" alt="">
+                  </p>
+                  <p class="custom-option" data-value="DE">DE
+                    <img src="./img/ru-icon.svg" alt="">
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="form__button">Заказать</button>
+        </div>
+      </form>
+      <div class="trusted-secure">
+        <div class="trusted-secure__wrapper">
+          <p>Trusted</p>
+          <p>Secure</p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <script src="./js/script.min.js"></script>
+</body>
+
+</html>

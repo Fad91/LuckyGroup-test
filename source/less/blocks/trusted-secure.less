@@ -1,0 +1,34 @@
+.trusted-secure {
+  @media (min-width: @mobile-width) {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-align: center;
+    color: #212121;
+    background: #f8f8f8;
+    width: 100%;
+  }
+
+  @media (min-width: @desktop-width) {
+    display: none;
+  }
+}
+
+.trusted-secure__wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 60px;
+  position: relative;
+
+  &::after {
+    @media (min-width: @mobile-width) {
+      content: "";
+      width: 12px;
+      height: 15px;
+      top: 33%;
+      left: 48%;
+      position: absolute;
+      background: url("../../img/lock-icon.svg") no-repeat;
+    }
+  }
+}

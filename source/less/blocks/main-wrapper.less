@@ -1,0 +1,23 @@
+
+.main-wrapper {
+
+  @media (min-width: @mobile-width) {
+    width: @mobile-width;
+    margin: 0 auto;
+    background-color: @main-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 60px auto;
+    padding-top: 30px;
+  }
+
+  @media (min-width: @desktop-width) {
+    width: 1120px;
+    padding: 75px 81px 81px 81px;
+    flex-direction: row;
+    align-items: stretch;
+    background-color: @content-white-background;
+    margin: 0;
+  }
+}
