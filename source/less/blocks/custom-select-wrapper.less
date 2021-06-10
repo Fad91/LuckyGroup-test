@@ -27,12 +27,12 @@
   padding: 0 10px;
   font-size: 20px;
   font-weight: 300;
-  color: #3b3b3b;
+  color: @custom-select-trigger-color;
   height: 50px;
   line-height: 60px;
   cursor: pointer;
-  background: #f8f8f8;
-  border: 1px solid #e4e4e4;
+  background: @form-title-white-background;
+  border: 1px solid @custom-options-white;
   border-radius: 5px;
 
   @media (min-width: @mobile-width) {
@@ -50,7 +50,7 @@
     font-size: 14px;
     line-height: 18px;
     text-align: center;
-    color: #212121;
+    color: @custom-select-trigger-text-color;
     display: flex;
     align-items: flex-end;
     margin-left: 5px;
@@ -79,9 +79,9 @@
   top: 100%;
   left: 0;
   right: 0;
-  border: 1px solid #e4e4e4;
+  border: 1px solid @custom-options-white;
   border-top: 0;
-  background: #f8f8f8;
+  background: @form-title-white-background;
   transition: all 0.5s;
   opacity: 0;
   visibility: hidden;
@@ -100,17 +100,17 @@
   line-height: 18px;
   font-weight: 300;
   text-align: center;
-  color: #212121;
+  color: @custom-select-trigger-text-color;
   cursor: pointer;
   transition: all 0.5s;
 }
 .custom-option:hover {
   cursor: pointer;
-  background-color: #b2b2b2;
+  background-color: @custom-options-hover-grey;
 }
 .custom-option.selected {
 
- color: #3b3b3b;
+ color: @custom-select-trigger-color;
 }
 
 .arrow img {
@@ -119,29 +119,3 @@
   height: 6px;
   width: 16px;
 }
-// .arrow::before, .arrow::after {
-//   content: "";
-//   position: absolute;
-//   bottom: 0px;
-//   width: 0.15rem;
-//   height: 100%;
-//   transition: all 0.5s;
-// }
-// .arrow::before {
-//   left: -5px;
-//   transform: rotate(45deg);
-//   background-color: #394a6d;
-// }
-// .arrow::after {
-//   left: 5px;
-//   transform: rotate(-45deg);
-//   background-color: #394a6d;
-// }
-// .open .arrow::before {
-//   left: -5px;
-//   transform: rotate(-45deg);
-// }
-// .open .arrow::after {
-//   left: 5px;
-//   transform: rotate(45deg);
-// }
